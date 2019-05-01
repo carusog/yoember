@@ -6,6 +6,7 @@ import Controller from '@ember/controller';
 
 export default Controller.extend({
 
+  headerMessage: 'Coming Soon',
   emailAddress: '',
   responseMessage: '',
 
