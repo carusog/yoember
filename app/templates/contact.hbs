@@ -1,1 +1,24 @@
 <h1>Contact us</h1>
+
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+  <div class="form-group form-group-lg">
+    {{input
+      type="email"
+      value=emailAddress
+      class="form-control"
+      placeholder="Please type your e-mail address."
+      autofocus="autofocus"}}
+  </div>
+  <div class="form-group form-group-lg">
+    {{textarea
+      value=message
+      class="form-control"
+      placeholder="Your message. (At least 5 characters.)"
+      row="7"}}
+  </div>
+  <div class="form-group form-group-lg">
+    <button disabled={{isDisabled}} {{ action "sendMessage" }} class="btn btn-primary btn-lg btn-block">
+      Send message
+    </button>
+  </div>
+</div>
